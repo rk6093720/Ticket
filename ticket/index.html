@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 30%;
+            margin: auto;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        input {
+            width: 94%;
+
+            height: 30px;
+            font-weight: bold;
+            margin: auto;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            width: 95%;
+            font-weight: bold;
+            height: 30px;
+            margin: auto;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        a:visited {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./index.html">
+            <h1>New Registration</h1>
+        </a>
+        <a href="./dashboard.html">
+            <h1>dashboard</h1>
+        </a>
+        <a href="./booking.html">
+            <h1>Booking</h1>
+        </a>
+
+    </div>
+    <h1>Fill this form for Train booking</h1>
+    <form id="form">
+        <input placeholder="unique id" type="text" id="unique_id">
+        <input placeholder="Name" minlength="4" type="text" id="name">
+        <input placeholder="Age" type="number" id="age">
+        
+        <select id="from_station">
+
+            <option value="">From Station</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+
+        </select>
+        <select id="to_station">
+            <option value="">To Station</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Pune">Pune</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+        </select>
+        <label>Journey Date:</label>
+        <input type="date" id="date" />
+
+        <select id="seat_type">
+            <option value="">Seat Type</option>
+            <option value="AC_First_Class">AC First Class</option>
+            <option value="Sleeper_Class">Sleeper Class</option>
+            <option value="Second_Class">Second Class</option>
+            <option value="General">General</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+</body>
+<script src="./index.js"></script>
+
+</html>

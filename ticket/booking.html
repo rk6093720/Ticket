@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking</title>
+  <style>
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    table {
+      width: 95%;
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    thead {
+      background-color: teal;
+      color: white;
+
+      height: 40px;
+
+    }
+
+    tr {
+      text-align: center;
+      height: 40px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgb(98, 219, 219);
+      height: 40px;
+    }
+
+    select {
+      margin-top: 20px;
+      margin-left: 40px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    a:visited {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="./index.html">
+      <h1>New Registration</h1>
+    </a>
+    <a href="./dashboard.html">
+      <h1>dashboard</h1>
+    </a>
+    <a href="./booking.html">
+      <h1>Booking</h1>
+    </a>
+
+  </div>
+  <select id="filter">
+    <option value="">Filter By Seat Type</option>
+    <option value="all">All</option>
+    <option value="AC_First_Class">AC First Class</option>
+    <option value="Sleeper_Class">Sleeper Class</option>
+    <option value="Second_Class">Second Class</option>
+    <option value="General">General</option>
+  </select>
+  <select id="sort_age">
+    <option value="">Sort by Age</option>
+    <option value="low_to_high">Age low to high</option>
+    <option value="high_to_low">Age high to low</option>
+
+
+  </select>
+  <select id="sort_date">
+    <option value="">Sort by Journey date</option>
+    <option value="low_to_high">date low to high</option>
+    <option value="high_to_low">date high to low</option>
+
+  </select>
+  <table cellspacing="0">
+    <thead>
+      <tr>
+
+        <th>Unique id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>From Station</th>
+        <th>To Station</th>
+        <th>Journey Date</th>
+        <th>Seat Type</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+</body>
+<script src="./booking.js"></script>
+
+</html>
